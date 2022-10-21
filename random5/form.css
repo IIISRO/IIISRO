@@ -1,0 +1,14 @@
+.inpt:hover{
+    background-color: cyan;
+    width: 150%;
+    height: 30px;
+}
+
+.inpt:focus{
+    background-color: yellow;
+    width: 150%;
+    height: 30px;
+    color: green;
+    font-size: large;
+}
+

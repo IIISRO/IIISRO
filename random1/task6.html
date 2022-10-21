@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <h2>Number Field</h2>
+    <p>The <b>input type="number"</b> defines a numeric input field.</p>
+    <p>You can use the min and max attributes to add numeric restrictions in the input field:</p> 
+        <label>Quantity(between 1 and 5):</label>
+        <input type="number" size="3%" min="1" max="5"></input>
+        <input type="button" value="Submit">
+    <h2>Numeric Steps</h2>
+    <p>Depending on browser support:Fixed steps will apply in the input field.</p>
+        <label>Quantity:</label>
+        <input type="text" size="5%" step="30" value="30">
+        <input type="button" value="Submit">
+    <h2>Date Field</h2>
+    <p>The <b>input type="date"</b> is used for input fields that should contain a date.</p>
+        <label>Birthdate:</label>
+        <input type="date">
+        <input type="button" value="Submit">
+    <h2>Email Field</h2>
+    <p>The <b>input type="email"</b> is used for input fields that should contain an e-mail address:</p>
+        <label>Enter your email:</label>
+        <input type="email">
+        <input type="button" value="Submit">
+    <p>Note that the form itself is not visibe.</p>
+    <p>Also note that the default width of a text field is 20 characters.</p>
+    <h2>Text field</h2>
+    <p>The<b>input type="text"</b>defines a one-line text input field:</p>
+        <label>First name:</label><br>
+        <input type="text" maxlength="20"><br>
+        <label>Last name:</label><br>
+        <input type="text" maxlength="20"><br><br>
+        <input type="button" value="Submit">
+    <h2>Password field</h2>
+    <p>The <b>input type="password"</b> defines a password field:</p>
+        <labe>Username:</labe><br>
+        <input type="text" maxlength="20"><br>
+        <labe>Password:</labe><br>
+        <input type="password" maxlength="20"><br><br>
+        <input type="button" value="Submit">
+    <h2>Radio Buttons</h2>
+    <p>The <b>input type="radio"</b> defines a radio button:</p>
+        <input type="radio" name="cins">
+        <label>Male</label>
+        <br>
+        <input type="radio" name="cins">
+        <label>Female</label>
+        <br>
+        <input type="radio" name="cins">
+        <label>Other</label>
+    </form>
+</body>
+</html>

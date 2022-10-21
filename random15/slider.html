@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
+    <style>
+        .emt{
+            height: 50px;
+            display: flex;
+            margin-top: 0.1%;
+
+            color: wheat;
+
+        }
+        .your-class{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<center>
+<div class="your-class">
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+    <div class="emt">your content</div>
+
+
+  </div>
+</center>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+
+$('.your-class').slick({
+    centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+    </script>
+</body>
+</html>

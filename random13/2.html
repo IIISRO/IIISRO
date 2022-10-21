@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        height: 2000px;
+        /* the tooltip should work after page scroll too */
+      }
+
+      .tooltip {
+        position: fixed;
+        z-index: 100;
+
+        padding: 10px 20px;
+
+        border: 1px solid #b3c9ce;
+        border-radius: 4px;
+        text-align: center;
+        font: italic 14px/1.3 sans-serif;
+        color: #333;
+        background: #fff;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      #house {
+        margin-top: 50px;
+        width: 400px;
+        border: 1px solid brown;
+      }
+
+      #roof {
+        width: 0;
+        height: 0;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 20px solid brown;
+        margin-top: -20px;
+      }
+
+      p {
+        text-align: justify;
+        margin: 1
+      }
+
+      #tip{
+          background-color: white;
+          display: none;
+          position: fixed;
+          height: 20px;
+          border: 1px solid black;
+      }
+    </style>
+</head>
+<body>
+    <div id="tip"></div>
+    <div data-tooltip="Here – is the house interior" id="house">
+        <div data-tooltip="Here – is the roof" id="roof"></div>
+        In some versions, the first and second little pigs are not eaten by the wolf after he demolishes their homes but instead runs to their brother's/sister's house, who originally had to take care of the two other pigs and build a brick house in a few versions. Most of these versions omit any attempts by the wolf to meet the third pig out of the house after his failed attempt to blow the house in. After the wolf goes down the chimney he either dies like in the original, runs away and never returns to eat the three little pigs or in some versions the wolf faints after trying to blow down the brick house and all three of the pigs survive in either case.
+        <a href="https://en.wikipedia.org/wiki/The_Three_Little_Pigs" data-tooltip="Read on…">Hover over me</a>
+      </div>
+    <script src="./app.js"></script>
+</body>
+</html>

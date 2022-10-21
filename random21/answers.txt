@@ -1,0 +1,70 @@
+Create database Employees;
+
+CREATE TABLE `Employee` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` varchar(255) NOT NULL,
+    `age` INT,
+    `salary` INT NOT NULL,
+    `number` INT NOT NULL UNIQUE,
+    `nationality` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
+1:
+
+insert into Employee(name,age,salary,number,nationality)
+values
+('Cara',49,1458,9508,'United States Virgin Islands'),
+('Wade',66,2585,8509,'Japan'),
+('Verda',52,3413,7560,'Mali'),
+('Clerra',80,3342,6874,'Korea'),
+('Frederique',74,3075,4265,'Belarus'),
+('Alice',30,2777,4014,'Berlin'),
+('Joyce',68,3293,6291,'Chad'),
+('Nella',53,1504,5540,'Bosnia and Herzegovina'),
+('Aida',26,1715,6586,'Bahamas'),
+('Greta',39,3094,1853,'Colombia');
+
+2:
+
+select * from Employee;
+
+3:
+
+select * from Employee where number=6291;
+
+4:
+
+select * from Employee where salary>2500;
+
+5:
+
+select * from Employee where name like 'A%';
+
+6:
+
+select * from Employee where nationality in('China', 'Japan', 'Russia', 'Korea');
+
+7:
+
+select * from Employee where age between 30 and 50;
+
+8:
+
+select * from Employee where name='Wade' and nationality='Japan';
+
+9:
+
+select * from Employee where age>30 and (number=7560 or number=1853);
+
+10:
+
+Update Employee set salary=salary*2 where name like '%a'
+
+11:
+
+delete from Employee where number=4014;
+
+12:
+
+drop table Employee

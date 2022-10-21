@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+
+    <button id="button1">Click to see the effect</button>   
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/slick/slick.min.js"></script>   
+    <script>
+        $("#button1").click(function() {
+            $( "div" ).each(function() {
+                let idd = $('div').attr('id')
+                $(this).text($(this).attr('id'))
+            });
+        });
+
+
+
+    </script>
+</body>
+</html>

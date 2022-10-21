@@ -1,0 +1,31 @@
+*{
+    margin:0% ;
+
+}
+
+.fb{
+    height: 100px;
+    background-color: lightblue;
+    background-image: url(./images/image-1.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+.sb{
+    height: 150px;
+    background-color:darksalmon;
+    background-image: url(./images/image-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tb{
+    height: 200px;
+    background-color: darkseagreen;
+    background-image: url(./images/image-3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.pr{
+    line-height: 48px;
+
+}

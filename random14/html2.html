@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>p {
+        margin: 8px;
+        font-size: 16px;
+      }
+    .font_color{
+        color: red;
+      }
+    .background {
+        background: yellow;
+      }
+      </style>
+</head>
+<body>
+
+    <p>PHP</p>
+    <p>Java</p>
+    <p>Python</p>
+
+    <button>add</button>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/slick/slick.min.js"></script>   
+    <script>
+            $("button").click(function() {
+            $("p").last().addClass('background')
+            $("p").last().addClass('font_color')
+        });
+
+
+    </script>
+</body>
+</html>

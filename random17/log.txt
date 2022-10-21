@@ -1,0 +1,7 @@
+|   Function name    |          worked time           |     arguments as list     |  arguments as dictionary  | function result  |
+|sum                 |  2022-06-30 04:56:01.204564    |  (1, 2)                   |  {}                       |  3               |  
+|divide              |  2022-06-30 04:56:01.204659    |  ()                       |  {'a': 4, 'b': 2}         |  2.0             |  
+|divide              |  2022-06-30 04:56:01.204721    |  (10, 0)                  |  {}                       |  division by zero|  
+|sum                 |  2022-06-30 04:56:22.564620    |  (1, 2)                   |  {}                       |  3               |  
+|divide              |  2022-06-30 04:56:22.564717    |  ()                       |  {'a': 4, 'b': 2}         |  2.0             |  
+|divide              |  2022-06-30 04:56:22.564792    |  (10, 0)                  |  {}                       |  division by zero|  

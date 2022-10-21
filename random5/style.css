@@ -1,0 +1,97 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body, button{
+    font-family: 'Montserrat', sans-serif;
+}
+.show{
+    background-color:cadetblue;
+    border: none;
+    padding: 10px 30px;
+
+}
+
+.show:focus+.block{
+    display: block;
+}
+
+.click{
+    background-color: darkgoldenrod;
+}
+.block{
+    display: none;
+    
+}
+.hamburger{
+    background-color: white;
+}
+
+.hamburger:focus{
+    border: 0;
+    outline: 0;
+}
+header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    
+}
+
+.line{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(135, 135, 154);
+    margin: 5px;
+}
+
+.line:nth-child(1){
+    border-color: white;
+    border-width: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.line:nth-child(3){
+    border-color: white;
+    border-width: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+.sidebar{   
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    box-shadow: 3px 5px 9px black;
+    transition: 1s;
+    overflow-x:scroll; 
+}
+
+.nav-links{
+    list-style-type: none;
+    text-align: right;
+    padding: 20px;
+}
+
+.nav-links > a{
+    padding: 10px 0;
+    display: block;
+    
+}
+.images > img {
+    opacity: 0.5;
+}
+.images > img:hover {
+    opacity: 1;
+}
+
+.hamburger:focus+.sidebar{
+    right: 0px;
+}

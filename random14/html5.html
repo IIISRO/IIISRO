@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <span>This is a span within a division.</span>
+        <p class="test">This is a paragraph with specified class within a division.</p>
+        <div class="test">This is a division with specified class.</div>
+        <p>This is another paragraph within a division</p>
+        <button>Select Test Class</button>
+     </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../assets/slick/slick.min.js"></script>   
+    <script>
+        $('button').click(function(){
+          $('.test').css("background-color","blue");
+        })
+                                                                                                                                            
+    </script>
+</body>
+</html>

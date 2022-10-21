@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo > h4{
+    font-weight: 400;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.logo, .user{
+    flex: 1;
+}
+nav{
+    flex: 2;
+    
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 18px;
+    
+}
+
+.user{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user i{
+    justify-content:center ;        
+    display:flex ;
+    width: 35px;
+    height: 33px;
+    background-color: #87879a;
+    border-radius: 20px;
+    padding-top: 8px;
+    /* padding-left: 8px; */
+    color: white;
+}
+
+#slider{
+    margin: auto;
+    width: 90%;
+    
+
+}
+
+#presentation{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.introduction{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 3;
+
+}
+.cover{
+    animation: drop 2s ease;
+    flex: 1;
+}
+
+.cover img{
+    height: 60vh;
+    filter: drop-shadow(0px 20px 30px black);
+}
+
+.introduction .text h1{
+    font-size: 44px;
+    font-weight: 500;
+    color: #5f5f5f;
+    /* background-image: linear-gradient(to right, #494949, #dd0c6c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+}
+
+.introduction .text p{
+    font-size: 22px;
+    color: #5f5f5f;
+}
+.introduction .buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+.introduction .buttons button{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    /* justify-content: space-evenly; */
+}
+.iphone{
+    color: #dd0c6c;
+    background-color: white;
+    border: 2px solid #dd0c6c;
+    /* margin-right: 40px; */
+}
+
+.dots{
+    width: 15%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot{
+    height: 20px;
+    width: 20px;
+    border: 3px solid #87879a;
+    border-radius: 50%;
+}
+
+.dot.active{
+    background: #87879a;
+}
+.shop{
+    color: white;
+    background-color: #dd0c6c;
+    border: none;
+    margin-left: 10px;
+}
+
+.background-image img{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    z-index: -1;
+    width: 65vh;
+    opacity: 0.7;
+}
+
+@keyframes drop{
+    from{
+        transform: translateY(-80px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#products{
+    background-image: url(https://www.howtogeek.com/wp-content/uploads/2018/01/shutterstock_530337757.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#products .col{
+    width: 300px;
+    text-align: center;
+    height: 70vh;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 40px;
+    color: white;
+    font-size: 18px;
+    transform: scale(1);
+    transition: 0.5s ease;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price{
+    padding: 20px 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.col-button{
+    height: 60px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #dd0c6c;
+    color: #dd0c6c;
+    font-size: 18px;
+    margin-top: 30px;
+}
+#products .col:hover{
+    background-color: white;
+    color: #6b7591;
+    transform: scale(1.2);
+}
+
+#products .col:hover .price{
+    border-top-color: #6b7591;
+    border-bottom-color: #6b7591;
+}
+
+#products .col:hover .col-button{
+    color: white;
+    background-color: #dd0c6c;
+
+}

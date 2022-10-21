@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}
+    <title>Student</title>
+{% endblock %}
+{% block content %}
+<h1>Student Information</h1>
+<hr>
+<br>
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="{{student.image}}" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{student.id}} : {{student.name}} {{student.surname}}</h5>
+          <p class="card-text">Status:{{student.status}} <br> Gender: {{student.gender}} <br>{{student.bio}}</p>
+          <p class="card-text"><a href="/students/" class="btn btn-primary">Go back</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

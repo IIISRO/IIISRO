@@ -1,0 +1,23 @@
+>>> category1 = Categories("Shopping Goods")
+>>> category1.save()
+>>> category2 = Categories("Specialty Goods")
+>>> category2.save()
+>>> product1=Products("Computer","Some Text",10,1000,2020,True,3.5,2)
+>>> product1.save()
+>>> product2=Products("Mobile phone","Some Text",30,500,2020,True,4.1,2
+
+>>> product2=Products("Mobile phone","Some Text",30,500,2020,True,4.1,2)
+>>> product2.save()
+>>> product3=Products("Clothing","Some Text",30,20,2020,True,3.2,1)
+>>> product3.save()
+>>> product4=Products("Sports equipment","Some Text",30,500,2018,False,2.6,1)
+>>> product4.save()
+
+***Assignment3
+
+>>>Products.query.filter_by(category_id=1).all()
+>>>Products.query.filter(Products.price < 100).all()
+>>>Categories.query.filter(Categories.title.contains('a')).all()
+>>>updated_row=Products.query.filter(Products.id==3).update(dict(name='Clothes')) 
+>>>db.session.commit()
+>>>Products.query.order_by(Products.rating).all()

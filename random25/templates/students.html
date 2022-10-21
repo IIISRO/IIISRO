@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}
+<title>Student List</title>
+{% endblock %}
+{% block content %}
+<h1>Student List</h1>
+<div class="students">
+{% for student in students %}
+    {% if student.status %}
+<div class="card" style="width: 18rem;">
+    <img src="{{student.image}}" class="card-img-top rounded border-1">
+    <div class="card-body">
+        <h5 class="card-title">{{student.name | upper}} {{student.surname | upper}}</h5>
+        {% if student.bio=="" %}
+        <p class="card-text">{{bio}}</p>
+        {% else %}
+        <p class="card-text">{{student.bio}}</p>
+        {% endif %}
+        <a href="/students/{{student.id}}" class="btn btn-primary">About more</a>
+    </div>
+</div>
+    {% endif %}
+{% endfor %}
+</div>
+{% endblock %}
