@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Leman</h1>
+<h1 align="center">Hi, I'm Shukuroff</h1>
 <h3 align="center">I'm a Full Stack Python/Django Web developer</h3>
     <img width="100%" height="auto" src="https://github.com/halfrost/halfrost/raw/master/icons/header_.png" height="175px"/>
 
@@ -6,15 +6,13 @@
 
 
 
-### :woman_technologist: &nbsp;About Me :
+### :man_technologist: &nbsp;About Me :
 
 I am a Full Stack Python Web Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
 
 - 🔭 I’m currently working on [Tech Academy Baku](https://github.com/TechAcademy-Azerbaijan)
 
-- 🌱 I’m currently learning **Django, React**
-
-- 📫 How to reach me **leman.miriyeva02@mail.ru**
+- 📫 How to reach me **ilgarshukuroff@gmail.com**
 
 ### 🚀 &nbsp;Languages and Tools :
 
@@ -61,10 +59,7 @@ I am a Full Stack Python Web Developer <img src="https://media.giphy.com/media/W
 <br/>
 
 
-<a href="https://github.com/iiisro/github-readme-activity-graph"><img alt="Ilgar Shukuroff's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=iiisro&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" /></a>
 
-<br/>
-<br/>
 
 ### Connect with me:
 <p align="left">
